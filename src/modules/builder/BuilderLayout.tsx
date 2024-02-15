@@ -5,6 +5,7 @@ import NavBarLayout from './nav-bar/NavBarLayout';
 import ResumeHeader from './resume/components/ResumeHeader';
 import { ResumeLayout } from './resume/ResumeLayout';
 import Tooltip from '@mui/material/Tooltip';
+import ProgressBar from './resume/components/ProgressBar';
 
 const BuilderLayout = () => {
   return (
@@ -14,9 +15,10 @@ const BuilderLayout = () => {
         <aside className="w-[22vw] min-w-[15rem] max-w-[21vw] print:hidden">
           <EditorLayout />
         </aside>
-        <div className="min-w-[30vw] flex flex-col flex-1 justify-center bg-custom-grey100 print:bg-white">
-          <header className="w-[21mm] mt-5 mb-3 mx-auto print:hidden">
+        <div className="w-full flex flex-col flex-1 justify-center bg-custom-grey100 print:bg-white">
+          <header className=" px-5 py-5 ">
             <ResumeHeader />
+            <ProgressBar />
             {/* <div className="w-full h-15 bg-cyan-950 text-center"> pwoihfbrb</div> */}
           </header>
           <div className="overflow-auto no-scrollbar">
